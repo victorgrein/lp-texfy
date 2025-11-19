@@ -410,10 +410,10 @@ export default function Home() {
               <Award className="w-20 h-20 text-gray-700 mx-auto mb-6 animate-bounce" />
             </div>
             <h2 className="text-5xl font-bold tracking-tight mb-6">
-              Uma solução premiada antes mesmo de nascer.
+              E conquistamos reconhecimento desde o início
             </h2>
             <p className="text-2xl text-gray-600 mb-16 leading-relaxed">
-              Validação é o nosso pilar. Nossa abordagem para o planejamento de PCP foi reconhecida no Startup Weekend Blumenau 2025.
+              Nossa abordagem para resolver o planejamento de PCP foi validada e premiada no Startup Weekend Blumenau 2025.
             </p>
           </div>
           
