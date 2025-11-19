@@ -40,12 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 local-*
+.claude
+.z-ai-config
 dev.log
 test
 prompt
-server.log
 
-# ai tools
-.claude
-.z-ai-config
-CLAUDE.md
+server.log
