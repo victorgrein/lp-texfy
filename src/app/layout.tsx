@@ -14,24 +14,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Texfy - Planejamento Inteligente para PCP Têxtil",
+  description: "Plataforma de IA focada em otimizar o Planejamento e Controle de Produção (PCP) na indústria têxtil. Elimine o retrabalho e transforme o caos em eficiência.",
+  keywords: ["Texfy", "PCP Têxtil", "Planejamento de Produção", "Indústria Têxtil", "IA", "Inteligência Artificial", "Fast Fashion", "Otimização"],
+  authors: [{ name: "Texfy Team" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/brain-icon.svg",
+    shortcut: "/brain-icon.svg",
+    apple: "/brain-icon.svg",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Texfy - Planejamento Inteligente para PCP Têxtil",
+    description: "Plataforma de IA para otimizar o PCP na indústria têxtil. Elimine o retrabalho.",
+    url: "https://texfy.com",
+    siteName: "Texfy",
     type: "website",
+    images: [
+      {
+        url: "/texfy-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Texfy - Planejamento Inteligente para PCP Têxtil",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Texfy - Planejamento Inteligente para PCP Têxtil",
+    description: "Plataforma de IA para otimizar o PCP na indústria têxtil",
+    images: ["/texfy-logo.png"],
   },
 };
 
