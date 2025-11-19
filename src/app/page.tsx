@@ -429,7 +429,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-purple-100 animate-on-scroll animation-delay-600">
+          <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 animate-on-scroll animation-delay-600">
             <div className="flex flex-col md:flex-row items-center gap-6 justify-center">
               <div className="flex-shrink-0">
                 <img
@@ -443,7 +443,7 @@ export default function Home() {
                   Convidados como Expositores
                 </h3>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Fomos convidados pela própria administração do <span className="font-semibold">Febratex</span> para sermos expositores na feira de inovação que antecede o maior evento da indústria têxtil da América Latina.
+                  Fomos convidados pela própria administração do <span className="font-semibold">Febratex Summit</span> para sermos expositores na feira de inovação que antecede o maior evento da indústria têxtil da América Latina.
                 </p>
               </div>
             </div>
@@ -513,7 +513,7 @@ export default function Home() {
                   <div className="space-y-3">
                     <Label htmlFor="cargo" className="text-white font-medium text-lg">Cargo</Label>
                     <Select value={formData.cargo} onValueChange={handleSelectChange}>
-                      <SelectTrigger className="bg-white/10 border-white/20 text-white rounded-2xl h-14 text-lg focus:bg-white/20 transition-all duration-300">
+                      <SelectTrigger className="bg-white/10 border-white/20 text-white rounded-2xl h-14 text-lg focus:bg-white/20 transition-all duration-300 flex items-center">
                         <SelectValue placeholder="Selecione seu cargo" />
                       </SelectTrigger>
                       <SelectContent className="bg-gray-900 border-white/20">
