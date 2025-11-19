@@ -50,7 +50,7 @@ Texfy - Planejamento Inteligente para PCP Têxtil
     `.trim()
 
     // Configurar o transporter do Nodemailer
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 587,
       secure: false,
