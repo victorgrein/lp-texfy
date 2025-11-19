@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { CheckCircle, TrendingUp, Clock, DollarSign, Award, Target, Brain, Zap, BarChart3, ArrowRight, Sparkles, Cpu, Network } from 'lucide-react'
+import { CheckCircle, TrendingUp, Clock, DollarSign, Award, Target, Brain, Zap, ArrowRight, Sparkles, Cpu, Network } from 'lucide-react'
 import { useScrollAnimation } from '@/hooks/use-intersection-observer'
 
 export default function Home() {
@@ -274,13 +274,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Niche Section */}
-      <section className="py-32 px-4 bg-gray-50 relative">
+      {/* About Us Section */}
+      <section className="py-32 px-4 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-tr from-gray-50 to-white opacity-50"></div>
-        
+
         {/* Floating Particles */}
         <div className="absolute inset-0 overflow-hidden">
-          {[...Array(20)].map((_, i) => (
+          {[...Array(15)].map((_, i) => (
             <div
               key={i}
               className="absolute w-1 h-1 bg-gray-300 rounded-full animate-pulse"
@@ -294,39 +294,92 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="container mx-auto max-w-4xl text-center relative z-10">
-          <div className="animate-on-scroll">
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-16 animate-on-scroll">
+            <div className="mb-8">
+              <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 rounded-full text-sm font-medium px-4 py-2 inline-flex items-center gap-2">
+                <Sparkles className="w-4 h-4" />
+                Nossa História
+              </Badge>
+            </div>
             <h2 className="text-5xl font-bold tracking-tight mb-6">
-              Feito sob medida para a Indústria Têxtil
+              Sobre Nós
             </h2>
-            <p className="text-2xl text-gray-600 mb-16 leading-relaxed">
-              Esta solução não é um ERP genérico. É uma ferramenta desenhada por especialistas para os desafios únicos do setor têxtil.
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Tudo começou no <span className="font-semibold text-gray-900">Startup Weekend Blumenau 2025</span>. Unidos pelo companheirismo e pela busca em resolver o maior problema da indústria têxtil, nasceu a Texfy — uma solução inteligente, moderna e construída com muita tecnologia.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-on-scroll animation-delay-200">
-              <BarChart3 className="w-8 h-8 text-gray-700 mb-4 mx-auto animate-pulse" />
-              <h3 className="font-semibold text-lg mb-2 tracking-tight">
-                Gestores de PCP ou Gerentes de Produção
-              </h3>
+          <div className="grid md:grid-cols-2 gap-12 items-center animate-on-scroll animation-delay-200">
+            {/* Image */}
+            <div className="order-2 md:order-1">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative">
+                  <img
+                    src="/51a0b3c6-6ccb-495c-b67e-6849489561ed.jpeg"
+                    alt="Equipe Texfy no Startup Weekend Blumenau 2025"
+                    className="rounded-3xl shadow-2xl w-full h-auto object-cover border-4 border-white"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-lg p-4 border border-gray-100">
+                    <div className="flex items-center gap-2">
+                      <Award className="w-5 h-5 text-purple-600" />
+                      <span className="font-semibold text-sm">SW Blumenau 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-on-scroll animation-delay-400">
-              <Target className="w-8 h-8 text-gray-700 mb-4 mx-auto animate-pulse" />
-              <h3 className="font-semibold text-lg mb-2 tracking-tight">
-                Pequenas ou Médias Indústrias Têxteis
-              </h3>
-            </div>
+            {/* Content */}
+            <div className="order-1 md:order-2 space-y-6">
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Target className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 tracking-tight text-gray-900">
+                      Identificamos o Problema Real
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Conversamos com gestores, visitamos fábricas e entendemos a dor: o retrabalho começa no planejamento.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-on-scroll animation-delay-600">
-              <Zap className="w-8 h-8 text-gray-700 mb-4 mx-auto animate-pulse" />
-              <h3 className="font-semibold text-lg mb-2 tracking-tight">
-                Operações de Fast Fashion
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Que exigem velocidade e precisão
-              </p>
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Brain className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 tracking-tight text-gray-900">
+                      Tecnologia como Solução
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Combinamos IA, análise preditiva e uma interface intuitiva para transformar o caos em clareza.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 tracking-tight text-gray-900">
+                      Feito para a Indústria Têxtil
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Não é um ERP genérico. É uma plataforma desenhada especificamente para os desafios do setor têxtil.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
