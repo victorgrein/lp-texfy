@@ -413,25 +413,41 @@ export default function Home() {
               E conquistamos reconhecimento desde o início
             </h2>
             <p className="text-2xl text-gray-600 mb-16 leading-relaxed">
-              Nossa abordagem para resolver o planejamento de PCP foi validada e premiada no Startup Weekend Blumenau 2025.
+              Nossa abordagem para resolver o planejamento de PCP foi premiada no Startup Weekend Blumenau 2025.
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 animate-on-scroll animation-delay-200">
               <div className="text-4xl font-bold mb-3 tracking-tight">2º Lugar</div>
               <p className="text-gray-700 text-lg">Geral no Startup Weekend Blumenau 2025</p>
             </div>
-            
+
             <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 animate-on-scroll animation-delay-400">
               <div className="text-4xl font-bold mb-3 tracking-tight">1º Lugar</div>
               <p className="text-gray-700 text-lg">Melhor solução B2B do evento</p>
             </div>
           </div>
-          
-          <p className="text-gray-600 text-lg mt-12 leading-relaxed animate-on-scroll animation-delay-600">
-            Validando nosso potencial de mercado diretamente com especialistas da indústria.
-          </p>
+
+          <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-purple-100 animate-on-scroll animation-delay-600">
+            <div className="flex flex-col md:flex-row items-center gap-6 justify-center">
+              <div className="flex-shrink-0">
+                <img
+                  src="/febratex-logo.png"
+                  alt="Febratex Summit"
+                  className="h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="text-center md:text-left">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Convidados como Expositores
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Fomos convidados pela própria administração do <span className="font-semibold">Febratex Summit</span> para sermos expositores na feira, maior evento da indústria têxtil da América Latina.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
