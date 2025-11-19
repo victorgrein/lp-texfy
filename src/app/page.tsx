@@ -433,9 +433,9 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center gap-6 justify-center">
               <div className="flex-shrink-0">
                 <img
-                  src="/febratex-logo.png"
-                  alt="Febratex Summit"
-                  className="h-16 w-auto object-contain"
+                  src="/logo-febratex-vertical-azul.png"
+                  alt="Febratex"
+                  className="h-20 w-auto object-contain"
                 />
               </div>
               <div className="text-center md:text-left">
@@ -443,7 +443,7 @@ export default function Home() {
                   Convidados como Expositores
                 </h3>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Fomos convidados pela própria administração do <span className="font-semibold">Febratex Summit</span> para sermos expositores na feira, maior evento da indústria têxtil da América Latina.
+                  Fomos convidados pela própria administração do <span className="font-semibold">Febratex</span> para sermos expositores na feira de inovação que antecede o maior evento da indústria têxtil da América Latina.
                 </p>
               </div>
             </div>
