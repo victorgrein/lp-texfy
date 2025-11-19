@@ -513,7 +513,7 @@ export default function Home() {
                   <div className="space-y-3">
                     <Label htmlFor="cargo" className="text-white font-medium text-lg">Cargo</Label>
                     <Select value={formData.cargo} onValueChange={handleSelectChange}>
-                      <SelectTrigger className="bg-white/10 border-white/20 text-white rounded-2xl h-14 text-lg focus:bg-white/20 transition-all duration-300 flex items-center">
+                      <SelectTrigger className="bg-white/10 border-white/20 text-white rounded-2xl !h-14 min-h-14 text-lg focus:bg-white/20 transition-all duration-300 [&>span]:leading-normal">
                         <SelectValue placeholder="Selecione seu cargo" />
                       </SelectTrigger>
                       <SelectContent className="bg-gray-900 border-white/20">
